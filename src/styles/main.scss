@@ -1,5 +1,5 @@
 // Variables
-$primary-color: #007bff;
+$primary-color: #49BBBD;
 $secondary-color: #6c757d;
 $font-family-base: 'Arial', sans-serif;
 
@@ -30,6 +30,7 @@ body {
   font-family: $font-family-base;
   line-height: 1.6;
   color: #333;
+  padding-top: 70px; // Add padding for fixed header
 }
 
 // Layout
@@ -40,7 +41,21 @@ body {
   padding: 0 15px;
 }
 
+// Base
+@import 'base/index';
+
+// Utils
+@import 'utils/index';
+
 // Components
+@import 'components/index';
+
+// Layouts
+@import 'layouts/index';
+
+// Pages
+@import 'pages/index';
+
 .button {
   padding: 10px 20px;
   border: none;
