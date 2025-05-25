@@ -1,0 +1,73 @@
+{
+  "siteContent": {
+    "hero": {
+      "title": "HiKnow",
+      "subtitle": "Your Knowledge Management Platform",
+      "description": "Organize, share, and grow your knowledge with our powerful platform",
+      "image": "/images/hero-image.png",
+      "ctaButton": "Get Started"
+    },
+    "features": [
+      {
+        "id": "feature1",
+        "title": "Knowledge Organization",
+        "description": "Easily organize your knowledge base with our intuitive system",
+        "icon": "/icons/organize.svg"
+      },
+      {
+        "id": "feature2",
+        "title": "Team Collaboration",
+        "description": "Work together seamlessly with your team members",
+        "icon": "/icons/collaborate.svg"
+      },
+      {
+        "id": "feature3",
+        "title": "Smart Search",
+        "description": "Find what you need instantly with our powerful search",
+        "icon": "/icons/search.svg"
+      }
+    ],
+    "about": {
+      "title": "About HiKnow",
+      "description": "We're building the future of knowledge management",
+      "mission": "Our mission is to make knowledge sharing simple and effective",
+      "team": [
+        {
+          "name": "John Doe",
+          "position": "CEO",
+          "image": "/team/john-doe.jpg"
+        },
+        {
+          "name": "Jane Smith",
+          "position": "CTO",
+          "image": "/team/jane-smith.jpg"
+        }
+      ]
+    }
+  },
+  "navigation": {
+    "mainMenu": [
+      {
+        "title": "Home",
+        "path": "/"
+      },
+      {
+        "title": "About",
+        "path": "/about"
+      },
+      {
+        "title": "Features",
+        "path": "/features"
+      }
+    ]
+  },
+  "metadata": {
+    "siteName": "HiKnow",
+    "description": "Knowledge Management Platform",
+    "logo": {
+      "light": "/logo/logo-light.png",
+      "dark": "/logo/logo-dark.png",
+      "favicon": "/logo/favicon.ico"
+    }
+  }
+} 
