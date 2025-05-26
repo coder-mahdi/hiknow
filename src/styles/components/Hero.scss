@@ -1,27 +1,29 @@
+@import '../utils/mixins';
+@import '../base/variables';
+
 .hero {
   min-height: 80vh;
   background-color: #49BBBD !important;
   color: white;
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -66vw;
+  width: 100%;
   z-index: 999;
   overflow-x: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
   &__container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
   }
 
   &__content {
-    flex: 1;
+    flex: 0 0 50%;
     max-width: 600px;
     padding: 4rem 0;
   }
@@ -94,16 +96,71 @@
   }
 
   &__image {
-    flex: 1;
+    flex: 0 0 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     img {
       max-width: 100%;
       height: auto;
       transform: scaleX(-1);
+      position: relative;
+      z-index: 1;
     }
+  }
+
+  &__floating-box {
+    position: absolute;
+    background-color: #f5f5f5;
+    padding: 1.25rem 1.75rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #000;
+    font-weight: 600;
+    z-index: 2;
+    animation: float 6s ease-in-out infinite;
+    min-width: 220px;
+    max-width: 280px;
+
+    &--users {
+      top: 46%;
+      right: -7%;
+      animation-delay: 0s;
+    }
+
+    &--success {
+      bottom: 15%;
+      left: -16%;
+      animation-delay: 2s;
+    }
+  }
+
+  &__floating-icon {
+    color: #49BBBD;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  &__floating-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 
@@ -125,6 +182,18 @@
 
     &__image {
       padding: 2rem 0;
+    }
+
+    &__floating-box {
+      position: relative;
+      top: auto;
+      right: auto;
+      bottom: auto;
+      left: auto;
+      margin: 1rem auto;
+      max-width: 90%;
+      min-width: auto;
+      animation: none;
     }
   }
 } 
