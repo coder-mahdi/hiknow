@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} HiKnow. All rights reserved.</p>
+          <p>© 2025 HiKnow. All rights reserved.</p>
         </div>
       </div>
     </footer>
