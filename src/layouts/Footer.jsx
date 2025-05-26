@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
+import '../styles/layouts/footer.scss';
 
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-container">
+      <div className="container">
         <div className="footer-content">
           <div className="footer-section">
             <h3>About Us</h3>
@@ -34,7 +35,7 @@ export default function Footer() {
         </div>
         
         <div className="footer-bottom">
-          <p>© 2025 HiKnow. All rights reserved.</p>
+          <p>&copy; 2024 HiKnow. All rights reserved.</p>
         </div>
       </div>
     </footer>

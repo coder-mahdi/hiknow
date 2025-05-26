@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
-import { auth } from '../firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from '../firebase';
+import logo from '../data/logo.png';
+import '../styles/layouts/header.scss';
 
 export default function Header() {
-  const [user] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
+
+  if (loading) {
+    return null;
+  }
 
   return (
     <header className="header">
@@ -11,14 +17,14 @@ export default function Header() {
         {/* Logo */}
         <div className="logo">
           <Link to="/">
-            <img src="/logo.png" alt="HiKnow Logo" />
+            <img src={logo} alt="HiKnow Logo" />
           </Link>
         </div>
 
         {/* Navigation Items */}
         <div className="nav-items">
           <Link to="/" className="nav-item">Home</Link>
-          <Link to="/about" className="nav-item">About Us</Link>
+          <Link to="/about" className="nav-item">About</Link>
           {user && <Link to="/dashboard" className="nav-item">Dashboard</Link>}
         </div>
 
