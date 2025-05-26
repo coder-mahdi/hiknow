@@ -10,11 +10,11 @@
     h2 {
       font-size: 2.5rem;
       font-weight: bold;
-      color: #1a1a1a;
-      margin-bottom: 1.5rem;
+      color: #2F327D;
+      margin-bottom: 1rem;
 
       span {
-        color: #f97316; // orange-500
+        color: #f97316;
       }
     }
 
@@ -35,38 +35,37 @@
   }
 
   .feature-box {
-    background: #fff;
+    background: white;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
     transition: transform 0.3s ease;
-    position: relative;
 
     &:hover {
       transform: translateY(-5px);
     }
 
     .feature-icon {
-      font-size: 2.5rem;
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 1.5rem;
       color: #3b82f6;
-      position: absolute;
-      top: -1rem;
-      left: -1rem;
-      background: white;
-      padding: 0.5rem;
-      border-radius: 50%;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     h3 {
       font-size: 1.5rem;
       font-weight: bold;
-      color: #1a1a1a;
-      margin: 1.5rem 0 1rem;
+      color: #2F327D;
+      margin-bottom: 1rem;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: #4a5568;
       line-height: 1.6;
     }

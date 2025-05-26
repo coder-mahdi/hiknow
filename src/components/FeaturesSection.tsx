@@ -2,12 +2,14 @@ import React from 'react';
 import '../styles/components/FeaturesSection.scss';
 import { FaBook, FaChartLine, FaBell } from 'react-icons/fa';
 
-const FeaturesSection = () => {
+const FeaturesSection: React.FC = () => {
   return (
-    <div className="features-section">
+    <section className="features-section">
       <div className="features-header">
-        <h2>All-In-One <span>Cloud Daily note</span></h2>
-        <p>Hiknow is a simple yet powerful web app that helps you track your emotions, reflect on your day, and gain insights into your mental well-being — all in one place.</p>
+        <h2>
+          <span>Hiknow</span> Features
+        </h2>
+        <p>Discover how Hiknow can help you understand and improve your mental well-being</p>
       </div>
 
       <div className="features-grid">
@@ -35,7 +37,7 @@ const FeaturesSection = () => {
           <p>Never miss a check-in. Set personalized reminders to journal daily and stay on track with your emotional health journey.</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
