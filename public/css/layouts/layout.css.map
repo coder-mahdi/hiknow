@@ -1,0 +1,1 @@
+{"version":3,"sources":["layouts/layout.scss"],"names":[],"mappings":"AAAA,QACE,WAAA,MACA,QAAA,KACA,eAAA,OAGF,KACE,KAAA","file":"layout.css","sourcesContent":[".layout {\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\nmain {\n  flex: 1;\n} "]}

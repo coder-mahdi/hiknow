@@ -1,0 +1,97 @@
+.header {
+  background-color: #49BBBD !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+
+  .logo {
+    img {
+      height: 40px;
+    }
+  }
+
+  .nav-items {
+    display: flex;
+    gap: 2rem;
+
+    .nav-item {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.2s;
+      font-weight: 500;
+
+      &:hover {
+        color: #e0e0e0;
+      }
+    }
+  }
+
+  .auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .auth-button {
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: all 0.2s;
+      cursor: pointer;
+      font-weight: 500;
+
+      &.login {
+        background: #ffffff;
+        color: #49BBBD;
+
+        &:hover {
+          background: #e0e0e0;
+        }
+      }
+
+      &.signup {
+        background: none;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+
+        &:hover {
+          background: #ffffff;
+          color: #49BBBD;
+        }
+      }
+
+      &.logout {
+        background: none;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+
+        &:hover {
+          background: #ffffff;
+          color: #49BBBD;
+        }
+      }
+    }
+
+    .user-section {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .user-name {
+        color: #2F327D;
+        font-weight: 500;
+      }
+    }
+  }
+} 
